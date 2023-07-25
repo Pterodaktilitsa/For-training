@@ -6,8 +6,8 @@ export const App = () => {
 	useEffect(() => {
 		fetch('https://jsonplaceholder.typicode.com/todos')
 			.then((response) => response.json())
-			.then((list) => {
-				setTodos(list);
+			.then((todoList) => {
+				setTodos(todoList);
 			});
 	}, []);
 
